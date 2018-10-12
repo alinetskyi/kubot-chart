@@ -16,12 +16,8 @@ service:
   internalPort: 4567
 
 ingress:
-  tls: true
-  hosts:
-    - bot.rubykube.io
-
-ingress:
   enabled: true
+  tls: true
   annotations:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
